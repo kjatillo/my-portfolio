@@ -406,6 +406,10 @@ section,
   resize: none;
 }
 
+.contact .email-form textarea {
+  height: 300px;
+}
+
 .contact .email-form input:focus,
 .contact .email-form textarea:focus {
   border-color: #14b789;
