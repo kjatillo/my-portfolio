@@ -16,6 +16,10 @@
 
     <!-- Local CSS -->
     <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    <link href="css/contact.css" rel="stylesheet" type="text/css" />
+    <link href="css/hero.css" rel="stylesheet" type="text/css" />
+    <link href="css/navigation.css" rel="stylesheet" type="text/css" />
+    <link href="css/skills.css" rel="stylesheet" type="text/css" />
 
     <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" rel="stylesheet" />
@@ -98,6 +102,69 @@
             </div>
         </section>
 
+        <!-- Skills -->
+        <section id="skills" class="skills section light-background">
+            <div class="container section-title" data-aos="fade-up">
+                <h2>Skills</h2>
+            </div>
+
+            <div class="container" data-aos="fade-up" data-aos-delay="100">
+                <div class="row skills-content skills-animation">
+                    <div class="col-lg-6">
+                        <div class="progress">
+                            <span class="skill"><span>HTML</span> <i class="val">95%</i></span>
+                            <div class="progress-bar-wrap">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0"
+                                    aria-valuemax="100"></div>
+                            </div>
+                        </div>
+
+                        <div class="progress">
+                            <span class="skill"><span>CSS</span> <i class="val">80%</i></span>
+                            <div class="progress-bar-wrap">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0"
+                                    aria-valuemax="100"></div>
+                            </div>
+                        </div>
+
+                        <div class="progress">
+                            <span class="skill"><span>JavaScript / TypeScript</span> <i class="val">65%</i></span>
+                            <div class="progress-bar-wrap">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0"
+                                    aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="progress">
+                            <span class="skill"><span>C# / .NET</span> <i class="val">75%</i></span>
+                            <div class="progress-bar-wrap">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                    aria-valuemax="100"></div>
+                            </div>
+                        </div>
+
+                        <div class="progress">
+                            <span class="skill"><span>Angular</span> <i class="val">55%</i></span>
+                            <div class="progress-bar-wrap">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0"
+                                    aria-valuemax="100"></div>
+                            </div>
+                        </div>
+
+                        <div class="progress">
+                            <span class="skill"><span>Python</span> <i class="val">85%</i></span>
+                            <div class="progress-bar-wrap">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0"
+                                    aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Contact -->
         <section id="contact" class="contact section light-background">
             <div class="container section-title" data-aos="fade-up">
@@ -132,17 +199,17 @@
                         </div>
 
                         <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="500">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2384.965860092761!2d-6.364182073788451!3d53.29014659963044!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670b4b8ec071f5%3A0xb6cf7501e0d9522a!2sTU%20Dublin%2C%20Tallaght%20Campus!5e0!3m2!1sen!2sie!4v1734188015478!5m2!1sen!2sie" frameborder="0" style="border:0; width: 100%; height: 270px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2384.965860092761!2d-6.364182073788451!3d53.29014659963044!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670b4b8ec071f5%3A0xb6cf7501e0d9522a!2sTU%20Dublin%2C%20Tallaght%20Campus!5e0!3m2!1sen!2sie!4v1734188015478!5m2!1sen!2sie"
+                                frameborder="0" style="border:0; width: 100%; height: 270px;" allowfullscreen=""
+                                loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
-
-                        
                     </div>
 
                     <div class="col-lg-8">
                         <form action="javascript:void(0);" method="post" class="email-form" data-aos="fade-up"
                             data-aos-delay="200" onsubmit="showSuccessMessage(event)">
                             <div class="row gy-4">
-
                                 <div class="col-md-6 ">
                                     <input type="text" name="name" class="form-control mt-3" placeholder="Your Name"
                                         required="">
@@ -170,7 +237,6 @@
 
                                     <button class="btn btn-success">Send Message</button>
                                 </div>
-
                             </div>
                         </form>
                     </div>
@@ -179,6 +245,7 @@
         </section>
     </main>
 
+    <!-- Footer -->
     <footer class="text-center">
         <div class="container p-4">
             <p class="mb-3 text-center">© 2024 Technological University Dublin</p>
@@ -206,7 +273,7 @@
         </div>
     </footer>
 
-    <!-- Scroll Top -->
+    <!-- Scroll Top Button -->
     <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
             class="bi bi-arrow-up-short"></i></a>
 
@@ -220,6 +287,9 @@
 
     <!-- Typed JS -->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js"></script>
+
+    <!-- Waypoints JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
 
     <!-- Local JS -->
     <script src="scripts/script.js"></script>
