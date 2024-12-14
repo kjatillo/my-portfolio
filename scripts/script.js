@@ -121,7 +121,7 @@ function showSuccessMessage(event) {
     document.querySelector('.email-form').reset();
 }
 
-/* Scroll top button */
+/* Scroll Top Button */
 let scrollTop = document.querySelector('.scroll-top');
 
 function toggleScrollTop() {
