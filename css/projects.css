@@ -1,0 +1,38 @@
+.projects-thumb {
+    background: #f9f9f9;
+    border: #fff 2px solid;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    padding: 40px;
+    transition: all ease 0.5s;
+  }
+  
+  .projects-thumb:hover {
+    border-color: #14B789;
+  }
+  
+  .projects-thumb:hover .projects-image,
+  .projects-thumb:focus .projects-image {
+    transform: rotate(0) translateY(0);
+  }
+  
+  .projects-image {
+    border-radius: 20px;
+    display: block;
+    width: 100%;
+    transform: rotate(10deg) translateY(80px);
+    transition: all ease 0.5s;
+  }
+  
+  .projects-title {
+    margin-bottom: 20px;
+  }
+  
+  .projects-tag {
+    font-size: 12px;
+    font-weight: 500;
+    color: #14B789;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+  }
