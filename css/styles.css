@@ -124,7 +124,6 @@ a:hover {
   }
 
   .navmenu a:hover:before,
-  .navmenu li:hover > a:before,
   .navmenu .active:before {
     visibility: visible;
     width: 100%;
@@ -279,6 +278,18 @@ h2 {
   letter-spacing: 1px;
 }
 
+.hero a {
+  background: #14b789;
+  border: 0;
+  padding: 10px 30px;
+  transition: 0.4s;
+  border-radius: 50px;
+}
+
+.hero a:hover {
+  background: rgba(20, 183, 137, 0.75);
+}
+
 @media (max-width: 768px) {
   .hero h2 {
     font-size: 32px;
@@ -427,13 +438,13 @@ footer {
 a .fa-linkedin,
 a .fa-instagram,
 a .fa-github {
-  color: #14b789 !important;
+  color: #fff !important;
 }
 
 a:hover .fa-linkedin,
 a:hover .fa-github,
 a:hover .fa-instagram {
-  color: #fff !important;
+  color: #14b789 !important;
 }
 
 /* Scroll Top Button */
