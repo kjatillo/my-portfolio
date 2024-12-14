@@ -1,0 +1,33 @@
+.awards .awards-image {
+    position: relative;
+    min-height: 400px;
+}
+
+.awards .awards-image img {
+    position: absolute;
+    inset: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.awards .awards-item h4 {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0 0 5px 0;
+}
+
+.awards .awards-item i {
+    font-size: 36px;
+    color: #14b789;
+    margin-right: 20px;
+    line-height: 0;
+}
+
+.awards .awards-item p {
+    font-size: 15px;
+    color: #444;
+    margin: 0;
+}
