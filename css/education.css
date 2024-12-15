@@ -33,7 +33,7 @@
 
 .education ul li span {
   font-weight: 600;
-  background-color: #14b789;
+  background-color: #128a65;
 }
 
 .education .education-item {
@@ -63,12 +63,12 @@
 }
 
 .education .education-item h3:hover {
-  color: #14b789;
+  color: #128a65;
   transition: none;
 }
 
 .education .education-item h3:hover span {
-  background-color: #14b789;
+  background-color: #128a65;
   transition: none;
 }
 
@@ -93,7 +93,7 @@
   font-size: 22px;
   line-height: 0;
   transition: 0.3s;
-  color: #14b789;
+  color: #128a65;
 }
 
 .education .education-item .education-toggle {
@@ -107,15 +107,15 @@
 }
 
 .education .education-item .education-toggle:hover {
-  color: #14b789;
+  color: #128a65;
 }
 
 .education .education-active h3 {
-  color: #14b789;
+  color: #128a65;
 }
 
 .education .education-active h3 span {
-  background-color: #14b789;
+  background-color: #128a65;
   transition: none;
 }
 
@@ -129,5 +129,5 @@
 
 .education .education-active .education-toggle {
   transform: rotate(90deg);
-  color: #14b789;
+  color: #128a65;
 }
