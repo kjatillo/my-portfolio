@@ -1,0 +1,133 @@
+.course-title {
+  color: #444;
+  line-height: 18px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.course-title span {
+  color: #128a65;
+}
+
+.education .content h3 {
+  font-weight: 400;
+  font-size: 34px;
+}
+
+.education h5 {
+  font-size: 16px;
+  padding: 5px 0;
+  display: inline-block;
+  font-weight: 500;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.education .content p {
+  color: #444;
+}
+
+.education ul li {
+  line-height: 1.8;
+}
+
+.education ul li span {
+  font-weight: 600;
+  background-color: #14b789;
+}
+
+.education .education-item {
+  background-color: #fff;
+  position: relative;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.education .education-item:last-child {
+  margin-bottom: 0;
+}
+
+.education .education-item h3 {
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 24px;
+  margin: 0 30px 0 32px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.education .education-item h3 span {
+  background-color: #444;
+}
+
+.education .education-item h3:hover {
+  color: #14b789;
+  transition: none;
+}
+
+.education .education-item h3:hover span {
+  background-color: #14b789;
+  transition: none;
+}
+
+.education .education-item .education-content {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: 0.3s ease-in-out;
+  visibility: hidden;
+  display: none;
+  opacity: 0;
+}
+
+.education .education-item .education-content p {
+  margin-bottom: 0;
+  overflow: hidden;
+}
+
+.education .education-item .education-icon {
+  position: absolute;
+  top: 22px;
+  left: 20px;
+  font-size: 22px;
+  line-height: 0;
+  transition: 0.3s;
+  color: #14b789;
+}
+
+.education .education-item .education-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 16px;
+  line-height: 0;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.education .education-item .education-toggle:hover {
+  color: #14b789;
+}
+
+.education .education-active h3 {
+  color: #14b789;
+}
+
+.education .education-active h3 span {
+  background-color: #14b789;
+  transition: none;
+}
+
+.education .education-active .education-content {
+  grid-template-rows: 1fr;
+  display: block;
+  visibility: visible;
+  opacity: 1;
+  padding-top: 10px;
+}
+
+.education .education-active .education-toggle {
+  transform: rotate(90deg);
+  color: #14b789;
+}
