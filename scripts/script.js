@@ -114,6 +114,13 @@ skillsAnimation.forEach((item) => {
     });
 });
 
+/* Education Toggle */
+document.querySelectorAll('.education-item h3, .education-item .education-toggle').forEach((educationItem) => {
+    educationItem.addEventListener('click', () => {
+        educationItem.parentNode.classList.toggle('education-active');
+    });
+});
+
 /* Contact Form */
 function showSuccessMessage(event) {
     event.preventDefault();
