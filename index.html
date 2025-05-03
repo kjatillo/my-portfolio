@@ -506,7 +506,7 @@
                                 </div>
 
                                 <div class="col-md-6 ">
-                                    <input type="email" class="form-control" name="email" placeholder="Your Email"
+                                    <input type="email" class="form-control" name="_replyto" placeholder="Your Email"
                                         required>
                                 </div>
 
@@ -518,6 +518,11 @@
                                 <div class="col-md-12">
                                     <textarea class="form-control" name="message" rows="6" placeholder="Message"
                                         required></textarea>
+                                </div>
+                                
+                                <!-- Hidden Honeypot field to prevent spam -->
+                                <div style="display: none;">
+                                    <input type="text" name="_gotcha">
                                 </div>
 
                                 <div class="col-md-12 text-center">
