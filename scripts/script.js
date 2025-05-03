@@ -122,11 +122,42 @@ document.querySelectorAll('.education-item h3, .education-item .education-toggle
 });
 
 /* Contact Form */
-function showSuccessMessage(event) {
-    event.preventDefault();
-    document.getElementById('success-message').classList.remove('d-none');
-    document.querySelector('.email-form').reset();
-}
+document.addEventListener('DOMContentLoaded', function() {
+    const contactForm = document.getElementById('contact-form');
+    if (contactForm) {
+        contactForm.addEventListener('submit', function(event) {
+            event.preventDefault();
+            
+            const formData = new FormData(contactForm);
+            const formAction = contactForm.getAttribute('action');
+            
+            fetch(formAction, {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            })
+            .then(response => {
+                if (response.ok) {
+                    document.getElementById('success-message').classList.remove('d-none');
+                    contactForm.reset();
+                } else {
+                    throw new Error('Network response was not ok');
+                }
+            })
+            .catch(error => {
+                document.getElementById('error-message').classList.remove('d-none');
+            });
+
+            // Hide messages after 5 seconds
+            setTimeout(function() {
+                document.getElementById('success-message').classList.add('d-none');
+                document.getElementById('error-message').classList.add('d-none');
+            }, 5000);
+        });
+    }
+});
 
 /* Scroll Top Button */
 let scrollTop = document.querySelector('.scroll-top');
