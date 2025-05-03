@@ -41,13 +41,25 @@
 }
 
 @media (min-width: 768px) {
-  #project-row-2 {
+  .projects-row-second {
     margin-top: 2em;
+  }
+  
+  /* Ensure first row first item has no top margin */
+  .projects-row-first .projects-thumb {
+    margin-top: 0;
   }
 }
 
+/* Apply consistent margins on mobile for specific items */
 @media (max-width: 767px) {
   .projects-thumb {
+    margin-top: 0;
+  }
+  
+  /* Apply margin to all project thumbs except the very first one */
+  .projects-row-first .col-12:not(:first-child) .projects-thumb,
+  .projects-row-second .col-12 .projects-thumb {
     margin-top: 1.5em;
   }
 }
