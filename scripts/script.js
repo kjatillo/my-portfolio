@@ -125,19 +125,11 @@ document.querySelectorAll('.education-item h3, .education-item .education-toggle
 document.addEventListener('DOMContentLoaded', function() {
     const contactForm = document.getElementById('contact-form');
     if (contactForm) {
-        console.log('Contact form found:', contactForm);
         contactForm.addEventListener('submit', function(event) {
             event.preventDefault();
-            console.log('Form submitted');
             
             const formData = new FormData(contactForm);
             const formAction = contactForm.getAttribute('action');
-            console.log('Form action URL:', formAction);
-            
-            // Log form data (for debugging only)
-            for (let pair of formData.entries()) {
-                console.log(pair[0] + ': ' + pair[1]);
-            }
             
             fetch(formAction, {
                 method: 'POST',
@@ -147,31 +139,15 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             })
             .then(response => {
-                console.log('Response status:', response.status);
                 if (response.ok) {
-                    console.log('Form submission successful');
                     document.getElementById('success-message').classList.remove('d-none');
                     contactForm.reset();
                 } else {
-                    console.error('Form submission failed');
                     throw new Error('Network response was not ok');
                 }
-                
-                // Try to get response details
-                return response.text().then(text => {
-                    try {
-                        return JSON.parse(text);
-                    } catch (e) {
-                        console.log('Response text:', text);
-                        return {};
-                    }
-                });
-            })
-            .then(data => {
-                console.log('Response data:', data);
+                return response.json();
             })
             .catch(error => {
-                console.error('Error during form submission:', error);
                 document.getElementById('error-message').classList.remove('d-none');
             });
 
@@ -181,8 +157,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 document.getElementById('error-message').classList.add('d-none');
             }, 5000);
         });
-    } else {
-        console.error('Contact form not found');
     }
 });
 
