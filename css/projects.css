@@ -41,8 +41,8 @@
 }
 
 @media (min-width: 768px) {
-  .projects-row-second {
-    margin-top: 2em;
+  .container .projects-row-second.row {
+    margin-top: 2em !important;
   }
   
   /* Ensure first row first item has no top margin */
